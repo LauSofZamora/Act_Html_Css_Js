@@ -1,0 +1,175 @@
+@font-face {
+    font-family: lemon_milk;
+    src: url(../font/lemonpunchDEMO.otf);
+}
+
+@font-face {
+    font-family: minihouse;
+    src: url(../font/Minihouse.otf);
+}
+
+body{
+    background-color: bisque;
+}
+
+h1{
+    font-family: lemon_milk;
+    font-size: 45px;
+    text-align: center;
+    color: rgb(255, 174, 0);
+}
+
+h2{
+    font-size: 30px;
+    color: rgb(226, 120, 0);
+    font-style: italic;
+}
+
+/* Animacion del titulo*/
+.titulo{
+    transition: transform 0.3s ease;
+    animation: none;
+}
+
+.titulo:hover {
+    animation: wobble 0.8s ease-out;
+}
+
+.titulo:hover {
+    animation: none;
+    animation: wobble 0.8s ease-out;
+}
+
+@keyframes wobble {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px) rotate(-5deg);
+    }
+    50% {
+        transform: translateX(10px) rotate(5deg);
+    }
+    75% {
+        transform: translateX(-5px) rotate(-3deg);
+    }
+}
+img{
+    width: 250px; 
+    height: 190px;
+    border-radius: 10%;
+    box-shadow: 0px 6px 4px rgb(255, 174, 0);
+    border: 1px solid rgb(255, 174, 0);
+}
+
+/* Efecto desliza hacia arriba */
+.desliza-arriba {
+    overflow: hidden;
+    display: inline-block;
+}
+  
+.desliza-arriba img {
+    transition: transform 0.5s ease;
+}
+
+.desliza-arriba:hover img {
+    transform: translateY(-20%);
+}
+
+/* Efecto de rebote*/  
+.rebote img {
+    transition: transform 0.20s ease;
+}
+  
+.rebote:hover img {
+    transform: translateY(-10px);
+}
+  
+.rebote:hover img {
+    animation: bounce 0.100s infinite alternate;
+}
+  
+@keyframes bounce {
+    to {
+      transform: translateX(-15px);
+    }
+}
+
+/* Efecto de giro vertical */  
+.giro-vertical img {
+    transition: transform 0.5s ease;
+}
+  
+.giro-vertical:hover img {
+    transform: rotateX(180deg);
+}
+
+/* Efecto de oscilación */
+.oscilacion img {
+    transition: transform 0.5s ease;
+}
+  
+.oscilacion:hover img {
+    animation: swing 0.9s infinite ease-in-out;
+}
+  
+@keyframes swing {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+}
+
+/* Efecto de pulso */
+.pulso img {
+    transition: transform 0.9s ease;
+}
+  
+.pulso:hover img {
+    animation: pulse 1s infinite;
+}
+  
+@keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+}
+
+/* Efecto de rotación */
+.rotacion img {
+    transition: transform 0.5s ease;
+}
+  
+.rotacion:hover img {
+    transform: rotate(360deg);
+}
+
+div.galeria {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    width: 90%; 
+    margin: 0 auto; 
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Sunfish;
+    font-size: 30px;
+    color: rgb(255, 174, 0);
+}
+
+@media (max-width: 768px) {
+    div.galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    div.galeria {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}

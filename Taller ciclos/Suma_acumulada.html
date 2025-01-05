@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma Acumulada</title>
+</head>
+<body>
+    <script>
+        function sumarNumeros() {
+            let suma = 0;
+            let numero;
+
+            do {
+                numero = parseInt(prompt("Ingresa un número (0 para terminar): "), 10);
+                if (!isNaN(numero)) {
+                    suma += numero;
+                } else {
+                    alert("Por favor, ingresa un número válido.");
+                }
+            } while (numero !== 0);
+
+            console.log(`La suma total es: ${suma}`);
+            alert(`La suma total es: ${suma}`);
+        }
+
+        sumarNumeros();
+    </script>
+</body>
+</html>

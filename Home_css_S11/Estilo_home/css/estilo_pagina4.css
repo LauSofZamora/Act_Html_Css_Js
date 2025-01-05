@@ -1,0 +1,123 @@
+@font-face {
+    font-family: lemon_milk;
+    src: url(../font/lemonpunchDEMO.otf);
+}
+
+@font-face {
+    font-family: minihouse;
+    src: url(../font/Minihouse.otf);
+}
+
+body{
+    background-color: bisque;
+}
+
+h1{
+    font-family: minihouse;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(0, 170, 128);
+    padding-bottom: -50px;
+}
+
+h2{
+    font-family: minihouse;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(0, 170, 128);
+}
+
+img{
+    width: 200px; 
+    height: 140px;
+    border-radius: 10%;
+    padding-top: 10px;
+    box-shadow: 0px 8px 6px rgb(0, 170, 128);
+}	
+
+div.cards {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    width: 95%; 
+    margin: 0 auto; 
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+div.cards div {
+    background: rgb(255, 212, 149);
+    border-radius: 10px;
+    padding-bottom: 5px;
+    box-shadow: 0px 6px 6px rgb(120, 119, 133);
+    padding: 5px 15px;
+    border: 2px solid #3498db;
+}
+
+@media (max-width: 768px) {
+    div.cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    div.cards {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+.card1 {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card1:hover {
+    background-color: #001fd1;
+    color: white;
+}
+
+.card2 {
+    transition: transform 0.3s ease;
+}
+
+.card2:hover {
+    transform: scale(1.1);
+}
+
+.card3 {
+    transition: font-size 0.3s ease;
+}
+
+.card3:hover {
+    font-size: 20px; 
+}
+
+.card4 {
+    transition: background 0.5s ease-in;
+}
+
+.card4:hover {
+    background: linear-gradient(45deg, #3ce77e, #f1c40f);
+}
+
+.card5 {
+
+    transition: transform 3s ease;
+}
+
+.card5:hover {
+    transform: rotateY(360deg);
+}
+
+.card6 {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.card6:hover {
+    opacity: 1;
+}

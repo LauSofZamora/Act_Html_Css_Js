@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Estilo_home/css/estilo_pagina5.css">
+</head>
+<body>
+    <main>
+        <div>
+            <p>Deseas saber mas información acerca de los gatos? Dejanos tus datos!</p>
+        </div>
+        <div class="formulario"> 
+            <form action="/submit" method="post"> 
+              <h2>Formulario de contacto</h2>
+              <label for="nombre">Nombre:</label> 
+              <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+              <label for="genero">Género:</label>  
+              <input type="radio" name="genero">Femenino<br>
+              <input type="radio" name="genero">Masculino<br>
+              <input type="radio" name="genero">Otro<br>
+              <input type="radio" name="genero">No responde<br><br>
+              <label for="email">Correo electrónico:</label> 
+              <input type="email" id="email" name="email" placeholder="Escribe tu correo" required> 
+              <label for="telefono">Teléfono:</label> 
+              <input type="number" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+              <label for="nacimiento">Fecha de nacimiento:</label> 
+              <input type="date" id="nacimiento" name="nacimiento" required>
+              <label for="lenguaje">Pais:</label>
+              <select id="lenguaje" name="lenguaje" required>
+                <option value="">Seleccione su país</option>
+                <option value="argentina">Argentina</option>
+                <option value="bolivia">Bolivia</option>
+                <option value="colombia">Colombia</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="mexico">México</option>
+              </select>
+              <label for="tema">Tema(s) de interés:</label> 
+              <input type="checkbox" id="tema" name="tema">Alimentación y dieta <br>
+              <input type="checkbox" id="tema" name="tema">Comunicación <br>
+              <input type="checkbox" id="tema" name="tema">Comportamiento <br>
+              <input type="checkbox" id="tema" name="tema">Domesticación <br>
+              <input type="checkbox" id="tema" name="tema">Entrenamiento <br>
+              <input type="checkbox" id="tema" name="tema">Problemas de salud <br>
+              <input type="checkbox" id="tema" name="tema">Razas <br><br>
+              <label for="mensaje">Mensaje:</label> 
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe algún comentario adicional o especifica que otro tema deseas saber"></textarea> 
+              <input type="submit" value="Enviar"> 
+            </form> 
+          </div>
+    </main>
+    
+</body>
+</html>

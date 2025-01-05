@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palabra_salir</title>
+</head>
+<body>
+    <script>
+        //5. Operación que termina al ingresar una palabra
+        do {
+            const operacion = prompt("Escribe una operación (ejemplo: 5 + 3) o 'salir' para terminar:");
+            if (operacion.toLowerCase() === "salir") {
+                console.log("Programa terminado.");
+                break;
+            }
+            try {
+                const resultado = eval(operacion);
+                console.log(`El resultado de "${operacion}" es: ${resultado}`);
+            } catch (error) {
+                console.log("Operación inválida, intenta nuevamente.");
+            }
+        } while (true);
+    </script>
+</body>
+</html>

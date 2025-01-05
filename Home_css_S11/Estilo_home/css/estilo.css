@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    line-height: 1.6
+}
+
+@font-face {
+    font-family: lemon_milk;
+    src: url(../font/lemonpunchDEMO.otf);
+}
+
+@font-face {
+    font-family: minihouse;
+    src: url(../font/Minihouse.otf);
+}
+
+aside tr .subtitulos{
+    font-family: lemon_milk;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(60, 52, 138);
+}
+
+aside h2{
+    font-family: lemon_milk;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(55, 58, 255);
+    font-style: italic;
+}
+
+header{
+    background-color: cornflowerblue;
+    color: white;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav li a:hover{
+    background-color: rgb(217, 152, 255);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    min-height: 80hv;
+}
+
+section{
+    flex: 3;
+}
+
+section iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+aside{
+    flex: 1;
+    background-color: cornsilk;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+}
+
+footer{
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.img rel{
+    width: 160px;
+    height: 160px;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}

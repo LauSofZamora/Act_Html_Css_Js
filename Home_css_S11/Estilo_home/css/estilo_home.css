@@ -1,0 +1,32 @@
+@font-face {
+    font-family: lemon_milk;
+    src: url(../font/lemonpunchDEMO.otf);
+}
+
+h1{
+    font-family: lemon_milk;
+    font-size: 45px;
+    text-align: center;
+    color: rgb(0, 143, 7);
+}
+
+h2{
+    font-family: lemon_milk;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(0, 143, 7);
+}
+
+header, main{
+    text-align: center;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+body{
+    background-color: bisque;
+}
