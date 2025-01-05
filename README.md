@@ -1,2 +1,2 @@
-# Act_Html_Css
-Actividades HTML y CSS del Bootcamp Desarrollo Web Full Stack 
+# Act_Html_Css_Js
+Actividades HTML, CSS y Js del Bootcamp Desarrollo Web Full Stack 
